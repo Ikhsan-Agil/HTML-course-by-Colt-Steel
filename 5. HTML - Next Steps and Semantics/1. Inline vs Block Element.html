@@ -1,13 +1,11 @@
-<!-- Heading element
-
-Represented by <h(n)></h(n)> tag
-n is the number from 1 to 6
-
-It is used to make the heading
-
-paragraph is a block element
+<!-- Inline vs block
+ Inline
+ ex : anchor element, span element
+ Block
+ ex : p element, div element
 
 -->
+
 <!doctype html>
 
 <html>
@@ -17,16 +15,28 @@ paragraph is a block element
   <body>
     <h1>Indonesia</h1>
 
+    <!-- attach image from local/server directory -->
+    <!-- alt attribute will be read by screen reader -->
+    <img src="pictures/Flag_of_Indonesia.svg.webp" alt="Bendera Indonesia" />
+
+    <div>
+      <a href="https://www.google.com">I am a link to <span>google</span></a>
+      <a href="about-to-refer-6-lesson.html">About Page</a>
+    </div>
     <p>
       <b>Indonesia</b>, dengan nama resmi <b>Republik Indonesia</b>,[b] adalah
-      sebuah negara kepulauan di Asia Tenggara dan Oseania. Letak geografis
-      negara ini secara maritim diapit oleh Samudra Hindia di sisi barat daya
-      dan Samudra Pasifik di sisi timur laut, juga merupakan negara di ujung
-      tenggara wilayah Asia. Secara daratan berada di antara superbenua
-      Afro-Eurasia dan daratan benua Oseania (Australia), juga menjadi salah
-      satu negara tropis yang dilalui oleh garis ekuator khatulistiwa. Indonesia
-      memiliki luas wilayah darat sebesar 1.904.569 km², sehingga menjadikannya
-      sebagai negara terluas ke-14 dunia.[10]
+      sebuah
+      <a href="https://id.wikipedia.org/wiki/Negara_kepulauan"
+        >negara kepulauan</a
+      >
+      di Asia Tenggara dan Oseania. Letak geografis negara ini secara maritim
+      diapit oleh Samudra Hindia di sisi barat daya dan Samudra Pasifik di sisi
+      timur laut, juga merupakan negara di ujung tenggara wilayah Asia. Secara
+      daratan berada di antara superbenua Afro-Eurasia dan daratan benua Oseania
+      (Australia), juga menjadi salah satu negara tropis yang dilalui oleh garis
+      ekuator khatulistiwa. Indonesia memiliki luas wilayah darat sebesar
+      1.904.569 km², sehingga menjadikannya sebagai negara terluas ke-14
+      dunia.[10]
     </p>
 
     <p>
@@ -107,7 +117,7 @@ paragraph is a block element
     <h5>I am h5</h5>
     <h6>I am h6</h6>
     <h2>Pulau Besar</h2>
-    <!-- add the list in html -->
+    <!-- we can nest list -->
     <ul>
       <li>
         Sumatera
@@ -125,5 +135,11 @@ paragraph is a block element
       <li>Sulawesi</li>
       <li>Papua</li>
     </ul>
+
+    <!-- attach image from internet link -->
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Map_of_Sunda_and_Sahul.svg/500px-Map_of_Sunda_and_Sahul.svg.png"
+      alt=""
+    />
   </body>
 </html>

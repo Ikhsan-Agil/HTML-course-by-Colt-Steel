@@ -1,13 +1,8 @@
-<!-- Heading element
-
-Represented by <h(n)></h(n)> tag
-n is the number from 1 to 6
-
-It is used to make the heading
-
-paragraph is a block element
-
+<!-- An Odd Assortment of Elements - HR, BR, Sup, and Sub
+horizontal line elements <hr>: to give horizontal line
+break elements <br>: to give line break
 -->
+
 <!doctype html>
 
 <html>
@@ -16,17 +11,60 @@ paragraph is a block element
   </head>
   <body>
     <h1>Indonesia</h1>
+    <hr />
+
+    <!-- attach image from local/server directory -->
+    <!-- alt attribute will be read by screen reader -->
+    <img src="pictures/Flag_of_Indonesia.svg.webp" alt="Bendera Indonesia" />
+
+    <div>
+      <a href="https://www.google.com">I am a link to <span>google</span></a>
+      <a href="about-to-refer-6-lesson.html">About Page</a>
+    </div>
+    <h1>Museum Perjuangan</h1>
+    <p>
+      Susunan batu yang bulat bentuknya <br />
+      berdiri kukuh menjaga senapan tua <br />
+      peluru menggeletak di atas meja <br />
+      menanti putusan pengunjungnya. <br />
+
+      Aku tahu sudah, di dalamnya <br />
+      tersimpan darah dan air mata kekasih <br />
+      Aku tahu sudah, di bawahnya <br />
+      terkubur kenangan dan impian <br />
+      Aku tahu sudah, suatu kali <br />
+      ibu-ibu direnggut cintanya <br />
+      dan tak pernah kembali <br />
+
+      Bukalah tutupnya <br />
+      senapan akan kembali berbunyi <br />
+      meneriakkan semboyan <br />
+      Merdeka atau Mati. <br />
+
+      Ingatlah, sesudah sebuah perang <br />
+      selalu pertempuran yang baru <br />
+      melawan dirimu. <br />
+    </p>
 
     <p>
       <b>Indonesia</b>, dengan nama resmi <b>Republik Indonesia</b>,[b] adalah
-      sebuah negara kepulauan di Asia Tenggara dan Oseania. Letak geografis
-      negara ini secara maritim diapit oleh Samudra Hindia di sisi barat daya
-      dan Samudra Pasifik di sisi timur laut, juga merupakan negara di ujung
-      tenggara wilayah Asia. Secara daratan berada di antara superbenua
-      Afro-Eurasia dan daratan benua Oseania (Australia), juga menjadi salah
-      satu negara tropis yang dilalui oleh garis ekuator khatulistiwa. Indonesia
-      memiliki luas wilayah darat sebesar 1.904.569 km², sehingga menjadikannya
-      sebagai negara terluas ke-14 dunia.[10]
+      sebuah
+      <a href="https://id.wikipedia.org/wiki/Negara_kepulauan"
+        >negara kepulauan</a
+      >
+      di Asia Tenggara dan Oseania. Letak geografis negara ini secara maritim
+      diapit oleh Samudra Hindia di sisi barat daya dan Samudra Pasifik di sisi
+      timur laut, juga merupakan negara di ujung tenggara wilayah Asia. Secara
+      daratan berada di antara superbenua Afro-Eurasia dan daratan benua Oseania
+      (Australia), juga menjadi salah satu negara tropis yang dilalui oleh garis
+      ekuator khatulistiwa. Indonesia memiliki luas wilayah darat sebesar
+      1.904.569 km², sehingga menjadikannya sebagai negara terluas ke-14 dunia.
+      <sup
+        ><a
+          href="https://web.archive.org/web/20220124203917/https://www.worldatlas.com/articles/which-countries-have-the-most-islands.html"
+          >[10]</a
+        ></sup
+      >
     </p>
 
     <p>
@@ -107,7 +145,7 @@ paragraph is a block element
     <h5>I am h5</h5>
     <h6>I am h6</h6>
     <h2>Pulau Besar</h2>
-    <!-- add the list in html -->
+    <!-- we can nest list -->
     <ul>
       <li>
         Sumatera
@@ -125,5 +163,13 @@ paragraph is a block element
       <li>Sulawesi</li>
       <li>Papua</li>
     </ul>
+
+    <!-- attach image from internet link -->
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Map_of_Sunda_and_Sahul.svg/500px-Map_of_Sunda_and_Sahul.svg.png"
+      alt=""
+    />
+    <h2>I like H<sub>2</sub>O</h2>
+    <p><sup>1</sup>/<sub>2</sub> + <sup>1</sup>/<sub>2</sub> = 1</p>
   </body>
 </html>
