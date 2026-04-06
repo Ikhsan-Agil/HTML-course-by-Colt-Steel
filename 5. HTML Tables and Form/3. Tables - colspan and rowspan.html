@@ -1,0 +1,82 @@
+<!-- rowspan & colspan
+ rowspan="n": the header will takes up the n rows of the table
+ colspan="n": the header will takes up the n columns of the table -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>high-income threshold</title>
+  </head>
+  <body>
+    <h1>high-income threshold</h1>
+    <table>
+      <!-- thead element -->
+      <thead>
+        <tr>
+          <th>Year</th>
+          <th>GNI per capita (US$)</th>
+          <th>Date of classification</th>
+        </tr>
+      </thead>
+      <!-- tbody element -->
+      <tbody>
+        <tr>
+          <td>1987</td>
+          <td>6,000</td>
+          <td>October 2, 1988</td>
+        </tr>
+        <tr>
+          <td>1988</td>
+          <td>6,000</td>
+          <td>September 13, 1989</td>
+        </tr>
+        <tr>
+          <td>2000</td>
+          <td>9,265</td>
+          <td>July 1, 2001</td>
+        </tr>
+      </tbody>
+    </table>
+    <h1>Customer table</h1>
+    <table>
+      <thead>
+        <tr>
+          <th rowspan="2">Name</th>
+          <th colspan="2">Gender</th>
+
+          <th rowspan="2">Age</th>
+          <th rowspan="2">Order Status</th>
+        </tr>
+        <tr>
+          <th>Male</th>
+          <th>Female</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Jane</th>
+          <th></th>
+          <th>&#10003;</th>
+          <th>21</th>
+          <th>Shipment</th>
+        </tr>
+        <tr>
+          <th>Sarah</th>
+          <th></th>
+          <th>&#10003;</th>
+          <th>23</th>
+          <th>Packed</th>
+        </tr>
+        <tr>
+          <th>John</th>
+          <th>&#10003;</th>
+          <th></th>
+          <th>27</th>
+          <th>Done</th>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
