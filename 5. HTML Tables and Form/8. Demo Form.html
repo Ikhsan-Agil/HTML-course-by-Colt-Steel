@@ -1,0 +1,52 @@
+<!-- input
+ - used when you sent the data to database
+ -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms Demo</title>
+  </head>
+  <body>
+    <h1>Forms Demo</h1>
+    <form action="/tacos">
+      <!-- file:///D:/tacos?username=kuz&password=123456&color=%23742a2a&age=25 -->
+
+      <!-- with type="button", the button does not submit the form -->
+      <button type="button">Don't submit Button</button>
+      <p>
+        <label for="username">Enter a username:</label>
+        <input
+          type="text"
+          placeholder="username"
+          id="username"
+          name="username"
+        />
+      </p>
+      <p>
+        <label for="password">Enter a password:</label>
+        <input
+          type="password"
+          placeholder="password"
+          id="password"
+          name="password"
+        />
+      </p>
+      <p>
+        <label for="color">Choose a color:</label>
+        <input type="color" id="color" name="color" />
+      </p>
+      <p>
+        <label for="age">Enter your age:</label>
+        <input type="number" placeholder="age" id="age" name="age" />
+      </p>
+      <button>Submit</button>
+    </form>
+    <form action="https://www.google.com/search">
+      <input type="text" name="q" />
+      <button>Search Google</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!-- input
+ - input element is used to create the variety of different form controls.
+ - we have 20+ different types of inputs, ranging from date pickers to checkboxes.
+ - the type attribute is where the magic happens. Changing type dramatically alters the input's behavior and appearance.
+ -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms Demo</title>
+  </head>
+  <body>
+    <h1>Forms Demo</h1>
+    <form action="/tacos">
+      <!-- with type="button", the button does not submit the form -->
+      <button type="button">Don't submit Button</button>
+      <p>
+        <label for="username">Enter a username:</label>
+        <input type="text" placeholder="username" id="username" />
+      </p>
+      <p>
+        <label for="password">Enter a password:</label>
+        <input type="password" placeholder="password" id="password" />
+      </p>
+      <p>
+        <label for="color">Choose a color:</label>
+        <input type="color" id="color" />
+      </p>
+      <p>
+        <label for="age">Enter your age:</label>
+        <input type="number" placeholder="age" id="age" />
+      </p>
+      <button>Submit</button>
+
+      <!-- other way to define a button, but it's the old one -->
+      <input type="submit" value="Submit!" />
+    </form>
+    <button>Button outside form</button>
+  </body>
+</html>
