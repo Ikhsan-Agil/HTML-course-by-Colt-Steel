@@ -1,0 +1,66 @@
+<!-- input
+ - used when you sent the data to database
+ -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms Demo</title>
+  </head>
+  <body>
+    <h1>Forms Demo</h1>
+
+    <!-- Checkboxes -->
+    <h2>Checkboxes, Radio Buttons, Selects, Range, and TextArea</h2>
+    <form action="/birds">
+      <input type="checkbox" name="agree_tos" id="agree" />
+      <label for="agree">I agree to ToS</label>
+      <!-- radio buttons -->
+      <p>
+        <label for="xs">XS: </label>
+        <input type="radio" name="size" id="xs" value="xs" />
+        <label for="s">S: </label>
+        <input type="radio" name="size" id="s" value="s" />
+        <label for="m">M: </label>
+        <input type="radio" name="size" id="m" value="m" />
+      </p>
+      <!-- Select -->
+      <p>
+        <label for="">Please select the entree</label>
+        <select name="meal" id="meal">
+          <option value="fish">Fish</option>
+          <option value="veg" selected>Vegetarian</option>
+          <option value="steak">Steak</option>
+        </select>
+      </p>
+      <!-- Range -->
+      <p>
+        <label for="cheese">Amount of cheese:</label>
+        <input
+          type="range"
+          id="cheese"
+          min="1"
+          max="100"
+          step="5"
+          value="75"
+          name="cheese_level"
+        />
+      </p>
+      <!-- TextArea -->
+      <p>
+        <label for="requests">Any Special Requests?</label>
+        <textarea
+          name=""
+          id="requests"
+          rows="10"
+          name="requests"
+          cols="40"
+          placeholder="Type your requests here..."
+        ></textarea>
+      </p>
+      <button>Submit</button>
+    </form>
+  </body>
+</html>

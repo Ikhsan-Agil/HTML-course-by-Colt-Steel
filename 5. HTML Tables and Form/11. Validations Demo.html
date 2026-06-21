@@ -1,0 +1,48 @@
+<!-- input
+ - used when you sent the data to database
+ -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms Demo</title>
+  </head>
+  <body>
+    <h1>Forms Demo</h1>
+
+    <!-- Checkboxes -->
+    <h2>Validation Demo</h2>
+    <form action="/dummy">
+      <div>
+        <label for="first">Enter your first name</label>
+        <input type="text" name="first" id="first" required />
+      </div>
+      <div>
+        <label for="username">username</label>
+        <input
+          type="text"
+          name="username"
+          id="username"
+          minlength="5"
+          maxlength="20"
+          required
+        />
+      </div>
+      <div>
+        <label for="age">age</label>
+        <input type="number" name="age" id="age" min="17" max="200" required />
+      </div>
+      <div>
+        <label for="email">email</label>
+        <input type="email" name="email" id="email" required />
+      </div>
+      <div>
+        <label for="url">url</label>
+        <input type="url" name="url" id="url" required />
+      </div>
+      <button>Submit</button>
+    </form>
+  </body>
+</html>

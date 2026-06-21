@@ -16,6 +16,7 @@
 
       <!-- with type="button", the button does not submit the form -->
       <button type="button">Don't submit Button</button>
+      <!-- text -->
       <p>
         <label for="username">Enter a username:</label>
         <input
@@ -25,6 +26,7 @@
           name="username"
         />
       </p>
+      <!-- password -->
       <p>
         <label for="password">Enter a password:</label>
         <input
@@ -34,19 +36,40 @@
           name="password"
         />
       </p>
+      <!-- color -->
       <p>
         <label for="color">Choose a color:</label>
         <input type="color" id="color" name="color" />
       </p>
+      <!-- number
+      min: minimum value
+      max: maximum value
+      step: the increase 
+      -->
       <p>
         <label for="age">Enter your age:</label>
-        <input type="number" placeholder="age" id="age" name="age" />
+        <input
+          type="number"
+          placeholder="age"
+          id="age"
+          name="age"
+          min="1"
+          max="1000"
+          step="5"
+        />
       </p>
       <button>Submit</button>
     </form>
+    <h2>Hijacking Search Design</h2>
+    <h2>Google Search</h2>
     <form action="https://www.google.com/search">
       <input type="text" name="q" />
       <button>Search Google</button>
+    </form>
+    <h2>YouTube Search</h2>
+    <form action="https://www.youtube.com/results">
+      <input type="text" name="q" />
+      <button>Search YouTube</button>
     </form>
   </body>
 </html>
